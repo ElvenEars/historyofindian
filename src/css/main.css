@@ -1,0 +1,109 @@
+
+html, body, #root {
+    height: 100%;
+}
+
+.h-90 {
+    height: 90%!important;
+}
+/* <-- Theme black */
+body.themeBlack {
+    background-color: black;
+    background-image: url(../Images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body.themeBlack nav {
+    font-family: 'Mako', arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #A7A7A7;
+    padding-top: 10px;
+}
+
+body.themeBlack .navbar-light .navbar-nav .nav-link {
+    color: #A7A7A7;
+}
+
+body.themeBlack .navbar-light .navbar-nav .nav-link:hover {
+    color: #A7A7A7;
+    text-decoration: underline;
+}
+
+body.themeBlack .navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+body.themeBlack .navbar-light .navbar-toggler-icon {
+    background-image: url(../Images/menu-sm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 29px;
+}
+/* Theme black--> */
+/* <-- Theme White */
+body.themeWhite{
+    background-color: black;
+    background-image: url(../Images/bg-white.png);
+    opacity: 0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+body.themeWhite nav {
+    font-family: 'Mako', arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #1F1E1E;
+    padding-top: 10px;
+}
+
+body.themeWhite .navbar-light .navbar-nav .nav-link {
+    color: #1F1E1E;
+}
+
+body.themeWhite .navbar-light .navbar-nav .nav-link:hover {
+    color: #1F1E1E;
+    text-decoration: underline;
+}
+
+body.themeWhite .navbar-light .navbar-nav .nav-link.active {
+    color: black;
+}
+
+body.themeWhite .navbar-light .navbar-toggler-icon {
+    background-image: url(../Images/menu-white-sm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 29px;
+}
+/* Theme White --> */
+
+/* <--Buttons */
+.buttons_main{
+    width: 100%;
+    height: 100%;
+    margin-top: 9%;
+    font-size: 1.5vw;
+    font-family: Mako;
+    font-style: normal;
+    font-weight: normal;
+    background: #9C101B;
+    opacity: 0.7;
+    border: none;
+}
+
+.buttons_main:hover {
+    opacity: 0.8;
+}
+/* Buttons --> */

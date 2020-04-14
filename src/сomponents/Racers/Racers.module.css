@@ -1,0 +1,20 @@
+.racers__title {
+    font-family: IM FELL Double Pica SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vmin;
+    text-transform: uppercase;  
+    color: #202020;
+    text-align: center;
+}
+
+.racers__text {
+    font-family: Mako;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vmin;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #000000;
+}
+

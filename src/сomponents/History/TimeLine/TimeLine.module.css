@@ -1,0 +1,18 @@
+.tiimeline { 
+    height:100%;
+}
+.timeline__year{
+    background-image: url(../../../Images/history-year.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:80px;
+    color: #C4C4C4;
+    margin:auto;
+}
+.timeline__year.sm{
+    height:50px;
+}
+.timeline__year.active{
+    height:100px;
+}

@@ -1,0 +1,46 @@
+
+.icons div {
+    margin-left: 27px;
+}
+
+.icons div:first-child {
+    margin-left: 20px;
+}
+
+.icons__istagram_sm {
+    background: #FAFAFA;
+    background-image: url(../../Images/inst-icon-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+}
+
+.icons__youtube_sm {
+    background: #FAFAFA;
+    background-image: url(../../Images/youtube-icon-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+}
+
+.icons__fb_sm {
+    background: #FAFAFA;
+    background-image: url(../../Images/fb-icon-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+}
+
+.languages div {
+    margin-left: 42px;
+}
+
+.languages div:first-child {
+    margin-left: 14px;
+}
