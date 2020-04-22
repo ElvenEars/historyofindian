@@ -8,7 +8,7 @@ export default class FindDillers extends Component {
     return (
       <Container fluid className="h-90">
         <Helmet>
-          <body className="themeWhite" />
+          <body className="themeWhite map" />
         </Helmet>
         <Map/>
         </Container>

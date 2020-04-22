@@ -88,7 +88,12 @@ body.themeWhite .navbar-light .navbar-toggler-icon {
     width: 29px;
 }
 /* Theme White --> */
-
+/* <--Theme WHite map */
+body.themeWhite.map{
+    background-color: white;
+    background-image: url(../Images/bg-white-map.png);
+}
+/* Theme white map--> */
 /* <--Buttons */
 .buttons_main{
     width: 100%;

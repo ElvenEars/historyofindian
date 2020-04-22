@@ -16,6 +16,7 @@ export default class Map extends Component {
                         <img 
                         src={require('../../../Images/Map/russia.png')}
                         alt="map-bg"
+                        className={css.active}
                         />
                         <img 
                         src={require('../../../Images/Map/australia.png')}
