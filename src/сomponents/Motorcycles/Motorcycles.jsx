@@ -28,7 +28,7 @@ export default class Motocycles extends Component {
             </Row>
             <Row className="justify-content-center ">
               <Col xs={3} sm={3} md={3} lg={2} xl={2}>
-                <Button size="lg" variant="danger" className="buttons_main">
+                <Button size="lg" variant="danger" className="button red">
                   Go to timeline
               </Button>
               </Col>
