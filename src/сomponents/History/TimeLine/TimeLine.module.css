@@ -4,15 +4,30 @@
 .timeline__year{
     background-image: url(../../../Images/history-year.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height:80px;
+    background-position: center bottom;
+    background-size: 2px 50px;
+    height:70px;
+    width:2px;
     color: #C4C4C4;
-    margin:auto;
+    text-indent: -800%;
 }
 .timeline__year.sm{
-    height:50px;
+    background-size: 1px 35px;
 }
 .timeline__year.active{
-    height:100px;
+    background-size: 2px 70px;
+}
+.timeline__year_next{
+    background-image: url(../../../Images/history-year-next.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:contain;
+    width:20px;
+}
+.timeline__year_prev{
+    background-image: url(../../../Images/history-year-prev.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:contain;
+    width:20px;
 }

@@ -5,11 +5,9 @@ import { Row, Col } from 'react-bootstrap'
 export default class Slider extends Component {
 
   render() {
-    console.log(this.props.image)
     this.img = require(`../../../../../Images/History/${this.props.image}`)
     return (
-      <Row className ="h-100">
-        <Row className="align-content-center ">
+      <Row className="h-100">
           <Col>
             <Row className="justify-content-center pb-5">
               <Col xs={10} sm={10} md={8} lg={6} className="align-items-center m-auto">
@@ -30,7 +28,6 @@ export default class Slider extends Component {
               </Col>
             </Row>
           </Col>
-        </Row >
       </Row>
     );
   }

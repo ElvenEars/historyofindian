@@ -5,7 +5,6 @@ import Timeline from './TimeLine/TimeLine';
 
 export default class History extends Component {
   render() {
-    console.log(this.props)
     return (
       <Container fluid className="h-90">
         <Helmet>

@@ -8,7 +8,6 @@ import Routers from './сomponents/Routers/Routers.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 function App(props) {
-  console.log(props);
   return (
     <>
       <BrowserRouter>

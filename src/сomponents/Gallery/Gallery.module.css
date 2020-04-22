@@ -1,0 +1,26 @@
+.gallery__main{
+    object-fit: contain;
+    overflow: hidden;
+    object-position: center;
+}
+.gallery__slider{
+    object-fit: fill;
+    overflow: hidden;
+    object-position: center;
+    margin-top: -31px;
+
+}
+.gallery__slider_up{
+    background-image: url(../../Images/gallery-up.png);
+    height: 31px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.gallery__slider_down{
+    background-image: url(../../Images/gallery-down.png);
+    height: 31px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}

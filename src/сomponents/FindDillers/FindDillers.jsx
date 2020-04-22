@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container} from 'react-bootstrap';
 import { Helmet } from 'react-helmet'
-import Diller from './Diller/Diller';
+import Map from './Map/Map'
 
 export default class FindDillers extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class FindDillers extends Component {
         <Helmet>
           <body className="themeWhite" />
         </Helmet>
-        <Diller/>
+        <Map/>
         </Container>
     );
   }

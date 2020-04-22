@@ -107,3 +107,7 @@ body.themeWhite .navbar-light .navbar-toggler-icon {
     opacity: 0.8;
 }
 /* Buttons --> */
+.carousel-inner{
+    height: 100%;
+    align-content: center
+}

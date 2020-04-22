@@ -1,0 +1,7 @@
+.img_warp{
+    position: relative;
+}
+.img_warp img{
+    position: absolute;
+    object-fit: cover;
+}
