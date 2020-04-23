@@ -5,9 +5,10 @@ import css from './TimeLine.module.css'
 
 export default class Timeline extends Component {
   render() {
+    console.log(this.props.timeline.years);
     return (
       <>
-        <TimeSpan years={this.props.timeline.years} />
+        <TimeSpan years={this.props.timeline.years[1950]} />
         <Container className="align-bottom">
             <Row className="w-100 justify-content-between mx-auto align-bottom">
             <div className={css.timeline__year_prev}>

@@ -51,9 +51,11 @@ export default class Map extends Component {
               Location - Enter State and Postcode, Both are required
             </Row>
             <input type="text" className="form-control"></input>
-            <Button size="lg" variant="danger" className="button red">
-              FIND
-            </Button>
+            <Row>
+              <Button size="lg" variant="danger" className="button red">
+                FIND
+              </Button>
+            </Row>
           </Col>
         </Row>
       </Container>
