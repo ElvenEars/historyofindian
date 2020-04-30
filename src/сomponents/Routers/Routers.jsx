@@ -14,7 +14,7 @@ export default class Routers extends Component {
                     <Route exact path="/motorcycles" component={Motorcycles} />
                     <Route path="/history" render={()=><History timeline = {this.props.state.timeline}/>} />
                     <Route exact path="/racers" component={Racers} />
-                    <Route exact path="/find-dillers" component={FindDillers} />
+                    <Route exact path="/find-dillers" render ={()=> <FindDillers map={this.props.state.map}/>} />
                     <Route exact path="/gallery" component={Gallery} />
                 </Switch>
             </>
