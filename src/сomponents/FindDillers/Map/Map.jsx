@@ -28,7 +28,7 @@ export default class Map extends Component {
               />
             </div>
           </Col>
-          <Col md={4} lg={4} xl={4} scrollable={true}>
+          <Col md={4} lg={4} xl={4}>
 
             <Row className={css.form_title}>
               Location - Enter State and Postcode, Both are required

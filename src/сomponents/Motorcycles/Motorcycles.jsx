@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import css from './Motorcycles.module.css'
 
 export default class Motocycles extends Component {
+  handleTimelineClick () {
+    window.location = "/history/"
+  }
   render() {
     return (
       <Container fluid className="h-90">
@@ -28,7 +31,7 @@ export default class Motocycles extends Component {
             </Row>
             <Row className="justify-content-center ">
               <Col xs={3} sm={3} md={3} lg={2} xl={2}>
-                <Button size="lg" variant="danger" className="button red">
+                <Button size="lg" variant="danger" className="button red" onClick={this.handleTimelineClick}> 
                   Go to timeline
               </Button>
               </Col>

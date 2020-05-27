@@ -27,6 +27,7 @@
     color: #DEDEDE;
     opacity: 0.4;
     text-align: center;
+    transition: all 1s ease;
 }
 
 .history__img {

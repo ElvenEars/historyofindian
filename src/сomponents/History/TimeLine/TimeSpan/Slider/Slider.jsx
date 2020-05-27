@@ -23,7 +23,7 @@ export default class Slider extends Component {
                 <img
                   className={`${css.history__img} img-fluid`}
                   src={this.img}
-                  alt="Motorcycle 1950">
+                  alt="Motorcycle 1940">
                 </img>
               </Col>
             </Row>

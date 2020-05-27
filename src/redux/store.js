@@ -5,12 +5,12 @@ let store = {
             years: {
                 slides: [
                     {
-                        id: 1, image: `1950-1.png`, title: `The Rise of the Wrecking Crew`, comment: `Dominating the World of Motorcycle Racing`,
+                        id: 1, image: `1940-1.png`, title: `The Rise of the Wrecking Crew`, comment: `Dominating the World of Motorcycle Racing`,
                         text: [
                             <div>
                                 <p>
                                     The Indian Motorcycle Wrecking Crew TM—made up of legendary racers Bobby Hill, Bill Tuman,
-                                    and Ernie Beckman—formed in the late 1940s, and by the early 1950s were dominating on
+                                    and Ernie Beckman—formed in the late 1940s, and by the early 1940s were dominating on
                                     both dirt and road courses. Among their signature wins were three straight Springfield
                                     Mile victories. Hill won the Springfield Mile in 1951 and 1952 and Tuman won it in 1953.
                                     The three also won season points titles and major events from coast to coast.
@@ -25,7 +25,7 @@ let store = {
                         ]
                     },
                     {
-                        id: 2, image: "1950-2.png", title: `A soldier who never existed`, comment: ``,
+                        id: 2, image: "1940-2.png", title: `A soldier who never existed`, comment: ``,
                         text: [
                             <div>
                                 <p>

@@ -4,155 +4,55 @@ import { div, Row, Container } from 'react-bootstrap';
 import css from './TimeLine.module.css'
 
 export default class Timeline extends Component {
+  constructor(props) {
+    super(props)
+    this.handleNextClick = this.handleNextClick.bind(this)
+    this.handlePrevClick = this.handlePrevClick.bind(this)
+    this.renderTimeline = this.renderTimeline.bind(this)
+    this.state = { year: 1930 }
+  }
+  handleNextClick() {
+    this.state.year >= 2000 ? this.setState({ year: 1900 }) : this.setState({ year: this.state.year + 10 })
+  }
+  handlePrevClick() {
+    this.state.year <= 1900 ? this.setState({ year: 2000 }) : this.setState({ year: this.state.year - 10 })
+  }
+  renderTimeline() {
+    let sm = '<div className={css.timeline__year}>'
+    let render = '' + sm
+    for (let i = 1900; i <= 2000; i += 10) {
+      render += sm * 3
+    }
+    return render;
+  }
   render() {
-    console.log(this.props.timeline.years);
+    const year = this.state.year
+    let sm = <div className={`${css.timeline__year} ${css.sm}`}></div>;
+    let yl = <div className={`${css.timeline__year}`}></div>;
+
+    let timeLine = [...Object.keys(this.props.timeline.years)].map((y, i, arr) =>
+      <><div className={parseInt(y) === year ? `${css.timeline__year} ${css.active}` : `${css.timeline__year}`}>{y}</div>
+        {arr.length - 1 !== i && sm}
+        {arr.length - 1 !== i && yl}
+        {arr.length - 1 !== i && sm}
+        {arr.length - 1 !== i && yl}
+        {arr.length - 1 !== i && sm}
+      </>)
     return (
       <>
-        <TimeSpan years={this.props.timeline.years[1950]} />
+        <TimeSpan years={this.props.timeline.years[year]} />
         <Container className="align-bottom">
-            <Row className="w-100 justify-content-between mx-auto align-bottom">
-            <div className={css.timeline__year_prev}>
+          <Row className="w-100 justify-content-between mx-auto align-bottom">
+            <div className={css.timeline__year_prev} onClick={this.handlePrevClick}>
             </div>
             <div className={`${css.timeline__year} ${css.sm}`}>
             </div>
-            <div className={`${css.timeline__year} `}>
-              1900
-            </div>
+            {timeLine}
             <div className={`${css.timeline__year} ${css.sm}`}>
             </div>
-            <div className={`${css.timeline__year}`}>
+            <div className={css.timeline__year_next} onClick={this.handleNextClick}>
             </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year}`}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year}`}>
-              1910
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year}`}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1920
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1930
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1940
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} ${css.active}`}>
-              1950
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1960
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1970
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1980
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              1900
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={`${css.timeline__year} `}>
-              2000
-            </div>
-            <div className={`${css.timeline__year} ${css.sm}`}>
-            </div>
-            <div className={css.timeline__year_next}>
-            </div>
-            </Row>
+          </Row>
         </Container>
       </>
     );

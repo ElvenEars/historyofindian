@@ -6,8 +6,9 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 2px 50px;
-    height:70px;
+    height:90px;
     width:2px;
+    padding-top: 10px;
     color: #C4C4C4;
     text-indent: -800%;
 }
@@ -15,7 +16,11 @@
     background-size: 1px 35px;
 }
 .timeline__year.active{
-    background-size: 2px 70px;
+    background-size: 2px 60px;
+    padding-top: 0px;
+    font-size: 18px;
+    background-position: bottom;
+    transition: all 0.5s ease;
 }
 .timeline__year_next{
     background-image: url(../../../Images/history-year-next.png);

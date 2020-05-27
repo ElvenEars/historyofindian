@@ -8,7 +8,7 @@ export default class History extends Component {
     return (
       <Container fluid className="h-90">
         <Helmet>
-          <body className="themeBlack" />
+          <body className="themeBlack blackBackground" />
         </Helmet>
         <Timeline timeline = {this.props.timeline}/>
       </Container>
